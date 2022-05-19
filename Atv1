@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void main(){     //DEFININDO VALORES DE BACKUP PARTE 1 
+    int v1 = 10, backup1;    //B1 = 10
+    float v2 = 3.33, backup2; //B2 = 3,33
+    char v3 = 'A', backup3; //B3 = V
+
+    //CRIANDO PONTEIROS PARA PODER TROCAR O VALOR DAS VARIÁVEIS
+    int *p1;    //DEFININDO O PRIMEIRO COMO INTEIRO
+    float *p2;  // O SEGUNDO COMO FLOAT
+    char *p3;   // O TERCEIRO COMO CHAR
+
+    //BACKUP DOS VALORES ANTES DE SEREM MODIFICADOS
+    backup1 = v1;    //PEGANDO VALOR V1
+    backup2 = v2;    //PEGANDO VALOR V2
+    backup3 = v3;    //PEGANDO VALOR V3
+
+    //ATRBUINDO PONTEIROS Á VARIAVEIS
+    p1 = &v1;       
+    p2 = &v2;
+    p3 = &v3;
+
+    //MUDANDO O VALOR DAS VARIÁVEIS UTILIZANDO PONTEIROS
+    *p1 = 8; //PRIMEIRA VARIÁVEL SENDO MUDADA
+    *p2 = 88.88; //SEGUNDA
+    *p3 = 'D'; //TERCEIRA
+
+    printf("\nValores antes: %d,  %.2f,  %c \n", backup1, backup2, backup3);
+    printf("\nValores depois: %d,  %.2f,  %c \n\n", v1, v2, v3);
+
+}
