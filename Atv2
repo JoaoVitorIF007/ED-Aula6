@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void main(){
+    //DEFININDO VARIAVEIS NUM 1,2 COMO INTEIRAS
+    int n1, n2; //INT N1 N2
+    n1 = 24; // VALORE N1
+    n2= 12; //VALOR N2
+
+    //DEFININDO P1 E P2 (PONTEIROS INTEIROS)
+    int *p1, *p2;
+    
+    p1 = &n1; // ATRIBUIÇÃO DE P1 E NUM1
+    p2 = &n2; // ATRIBUIÇÃO DE P2 E NUM2
+
+
+    //SE O N FOR MAIOR IMPRIMIR A VARIÁVEL PONTEIRO 
+    if(p1 > p2){ //P1 TEM QUE SER MAIOR QUE P2
+    //SE FOR MAIOR O MAIOR SERÁ P1
+        printf("O maior endereco e p1: %d\nEndereco de p2: %d \n", p1, p2);  
+      } else{ //SE NÃO O MAIOR ENDEREÇO SERÁ P2
+        printf("O maior endereco e p2: %d\nEndereco de p1: %d \n", p2, p1);
+ }
+
+}
