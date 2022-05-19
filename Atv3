@@ -1,0 +1,22 @@
+#include <stdio.h>
+    
+void main(){
+    int n1, n2;  //DEFININDO VALORES INTEIROS N1 E N2
+    int *p1, *p2; //DEFININDO PONTEIROS INTEIROS P1 E P2
+
+    printf("Escolha o valor de n1: "); //FRASE PARA O USU ESCOLHER VALORES
+    scanf("%d", &n1); //LENDO VALOR DE N1 
+    printf("Escolha o valor de n2: "); //FRASE PARA O USU ESCOLHER VALORES
+    scanf("%d", &n2); //LENDO VALOR DE N2
+
+    p1 = &n1; //ATRIBUIÇÃO DE PONTEIROS PARA VALORES (NO CASO N1)
+    p2 = &n2; 
+
+    //P1 TEM QUE SER MAIOR QUE P2
+    if(p1 > p2){ //SE FOR MAIOR MOSTRAR P1 COMO MAIOR
+        printf("O maior endereco e p1: %d\nEndereco de p2: %d", p1, p2);
+    } else{ //SE FOR MENOR MOSTRAR P2 COMO MENOR
+        printf("O maior endereco e p2: %d\nEndereco de p1: %d", p2, p1);
+ } //%D PARA MOSTRAR QUE É INTEIRO
+    
+}
