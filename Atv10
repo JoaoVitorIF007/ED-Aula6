@@ -13,3 +13,4 @@ void main(){
         printf("O dobro do valor de %d sera: %d\n", i, *ponteiro);
     }
 }
+
