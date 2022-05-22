@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float numeros[10] = {3.3, 3.4, 6.2, 12.0, 5.5, 8.4, 3.2, 1.7, 60.2, 6.1}; 
+    int i,n =1; //REPETIÇÃO
+//CRIANDO REPETIÇÕES
+    for (i = 0; i < 10; i++)
+    {
+        printf("endereco %i = %p\n",n++, numeros[i]);    
+    }
+    return 0;
+}
