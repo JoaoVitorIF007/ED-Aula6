@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int calculo(a,b,c);  
+int main(void)     
+{
+    int a=3, b=8,c=10; 
+        printf("\nvalor A: %i", a);  
+        printf("\nvalor B: %i", b);  
+    calculo(a,b,c); 
+    return 0;
+}
+int calculo(a,b,c){
+    a =a*2;
+    b =b*2;
+    c=a+b;
+    printf(" quadrado de A: %d \nquadrado de B: %d \nSOMA =  %d",a,b,c);
+    return 0;
+}
