@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float matriz[3][3] = {3.3, 1.2, 5.1, 2.6, 3.0, 1.5};
+    int l,c; // LINHA E COLUNA DA MATRIZ
+
+    for (l = 0; l < 3; l++)
+    {
+        for (c = 0; c < 3; c++)
+        {
+            printf("Linha (%d) Coluna(%d) Endereco[%p]\n",matriz[l],matriz[c]);
+        }//FORMAÇÃO MATRIZ
+        
+    }
+    return 0;
+}
