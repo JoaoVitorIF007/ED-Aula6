@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int calculo(a,b,c);  
+int main(void)     
+{
+    int a=3, b=7,c=0; // C = FUNÇÃO CALCULO (SOMA)
+        printf("\nvalor A: %i", a);  
+        printf("\nvalor B: %i", b);  
+    c = calculo(a,b,c); 
+    printf("\n%d + %d \nSOMA = %d\n",a,b,c); 
+    return 0;
+}
+int calculo(a,b,c){
+    c=b+a;  // C = SOMA
+    return c; 
+}
