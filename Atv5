@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int comparar(a,b);  //INTEIRO A B
+int main(void)     
+{
+    int a=3, b=33; //VALOR E A E B
+        printf("\nvalor A: %i", a);  
+        printf("\nvalor B: %i", b);  
+    comparar(a,b); //FUNÇÃO A E B
+    return 0;
+}
+int comparar(a,b){     //COMPARANDO MAIOR COM MENOR
+    if (a>b)
+    {
+        printf("\nvalor A %d e maior que valor B = %d ",a,b);
+    }
+    else{
+        printf("\nvalor B %d e maior que valor A = %d ",b,a);
+    }
+    //INFORMANDO QUAL MAIOR E MENOR
+}
