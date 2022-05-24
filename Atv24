@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int alterar(a,b);  //DECLARANDO FUNÇÃO INTEIRA VAL > A , B
+int main(void)     
+{
+    int a=3, b=33; //VALORES INTEIROS A E B
+        printf("\nvalor A: %i", a);  
+        printf("\nvalor B: %i", b);  
+
+    printf("\nTrocando valores: ");
+    alterar(a,b); 
+    return 0;
+}
+int alterar(a, b){  
+    printf("\nvalor de A: %i", b);
+    printf("\nvalor de B: %i\n", a);
+    return 0;
+}
