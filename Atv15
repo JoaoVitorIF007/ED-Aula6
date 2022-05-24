@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void funcao(int *array){
+    int i;
+    int *p1;
+    p1 = &i;
+    for(*p1 = 0; *p1<5; *p1+=1){ //5 POSIÇÕES   ( 0 A 4)
+        printf("Posicao %d: %d \n", *p1, array[*p1]);
+    }  
+}
+//ESCOLHENDO VALORES PARA IMPRESSÃO EM POSIÇÃO
+void main(){
+    int a[5] = {3, 6, 11, 26, 33};
+    funcao(&a);
+    
+}
