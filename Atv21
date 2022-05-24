@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i,num[5];
+    for (i = 0; i < 5; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+
+    for (i = 0; i < 5; i++)
+    {
+           if (num[i]%2 ==0)
+    {
+        printf("\nO endereco do numero %d e %p: \n",num[i],num[i]);
+    }
+    else
+    printf("\nNumero %d e Impar!!\n",num[i]);
+    }
+    
+    return 0;
+}
